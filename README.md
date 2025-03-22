@@ -1,12 +1,12 @@
 # Matei's Portfolio
 
-## Descriere
-Acesta este portofoliul meu personal, în care sunt prezentate proiectele și abilitățile mele de dezvoltator software junior.
+## Description
+This is my personal portfolio, showcasing my projects and skills as a junior software developer.
 
-## Tehnologii utilizate:
-- **HTML** - Structura paginilor web
-- **CSS** - Stilizarea și design-ul paginilor web
-- **JavaScript** - Funcționalități dinamice
-- **Python** - Automatizare și aplicații backend
-- **Java** - Proiecte de backend și aplicații mobile
-- **Bootstrap** - Design responsive și UI components
+## Technologies used:
+- **HTML** - Web page structure
+- **CSS** - Styling and design of web pages
+- **JavaScript** - Dynamic functionalities
+- **Python** - Automation and backend applications
+- **Java** - Backend projects and mobile applications
+- **Bootstrap** - Responsive design and UI components
