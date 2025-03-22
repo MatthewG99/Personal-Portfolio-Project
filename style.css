@@ -218,6 +218,147 @@ textarea {
 
 /* Media Queries */
 
+/* Normal phones - Tested on iPhone 13PRO*/
+@media (max-width: 480px) {
+  .box {
+    margin-bottom: 0;
+  }
+  .box-first {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: 400px;
+    padding: 0;
+    margin-top: 0;
+  }
+  .main-text {
+    font-size: 2.8rem;
+    margin-top: 20px;
+  }
+  .secondary-text {
+    font-size: 1.6rem;
+    font-weight: 320;
+    margin-top: 20px;
+  }
+  .mac-img {
+    width: 350px;
+    bottom: 0px;
+    padding-right: 0px;
+    top: 47.5%;
+  }
+
+  .box-second {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: 540px;
+    margin-top: 40px;
+  }
+
+  .description-secondary-text {
+    font-size: 1.3rem;
+  }
+
+  .description-main-text {
+    font-size: 2.5rem;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .img-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1px;
+    width: 100%;
+    margin-left: 19px;
+  }
+
+  .img-container img {
+    width: 55px;
+    margin-top: 15px;
+  }
+
+  .hello-img {
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 325px;
+    height: auto;
+  }
+
+  .box-fourth {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: 700px;
+    margin-top: 45px;
+  }
+
+  .box-third {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: auto;
+    margin-top: 45px;
+  }
+
+  .carousel-inner {
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .carousel-item img {
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: auto;
+  }
+
+  label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1px;
+  }
+
+  form {
+    margin-top: 10px;
+  }
+
+  .input-text {
+    width: 100wh;
+  }
+
+  .message-text {
+    margin-bottom: 0;
+  }
+
+  .submit-button {
+    width: 50%;
+    border-radius: 40px;
+    margin-top: 20px;
+  }
+
+  .mg-logo {
+    height: 40px;
+  }
+}
+
 /* Small tablets & large phones (portrait) */
 @media (min-width: 481px) and (max-width: 767px) {
   .box {
