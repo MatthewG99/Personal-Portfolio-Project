@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matei's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              class="mg-logo"
+              src="./images/mg-logo.png"
+              height="50"
+              alt="Matei Grajdeanu Website Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#TechStack">Tech Stack</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Introduction -->
+    <section class="box box-first" id="Home">
+      <h1 class="main-text">I'm Matei</h1>
+      <h2 class="secondary-text">
+        Junior <br />
+        &lt;Software Engineer/&gt;
+      </h2>
+      <img
+        src="./images/mac-img2.png"
+        alt="An image with a MAC"
+        class="mac-img"
+      />
+    </section>
+
+    <!-- Description & Tech-Stack -->
+    <section class="description" id="TechStack">
+      <div class="box box-second">
+        <h2 class="description-main-text">Hello</h2>
+        <p class="description-secondary-text">
+          I am a <span class="bold">Junior Software Engineer </span>with a
+          growing expertise in
+          <span class="bold">JavaScript, HTML, CSS, Python</span> and
+          <span class="bold">Java.</span>
+        </p>
+
+        <div class="flex-container">
+          <div class="img-container">
+            <img
+              src="./images/javascript-logo.svg"
+              height="90px"
+              alt="Javascript Logo"
+            />
+            <img src="./images/html-logo.svg" height="90px" alt="HTML Logo" />
+            <img src="./images/css-logo.svg" height="100px" alt="CSS Logo" />
+            <img
+              src="./images/bootstrap-logo.svg"
+              height="90px"
+              alt="Bootstrap Logo"
+            />
+            <img
+              src="./images/python-logo.svg"
+              height="90px"
+              alt="Python Logo"
+            />
+            <img src="./images/java-logo.svg" height="90px" alt="Java Logo" />
+          </div>
+
+          <img
+            class="hello-img"
+            src="./images/hello.png"
+            alt="Animation with man saying Hi"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects box box-third" id="Projects">
+      <h2 class="description-main-text">Projects</h2>
+
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="./images/simon-game-img.png"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="./images/tindog-img.png"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="./images/clock-img.png"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <div class="box box-fourth mb-4" id="Contact">
+        <p class="main-text">Get in touch</p>
+        <p class="description-secondary-text additional-size">
+          If you'd like to collaborate on a project, just fill out the form
+          below, and I'll get back to you soon!
+        </p>
+        <div class="contact">
+          <form action="https://formspree.io/f/xdkaqlaw" method="POST">
+            <label for="name">Name:</label>
+            <input
+              class="input-text"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+
+            <label for="phone">Contact Number:</label>
+            <input class="input-text" type="tel" id="phone" name="phone" />
+
+            <label for="email">Email Address:</label>
+            <input
+              class="input-text"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              class="input-text message-text"
+              id="message"
+              name="message"
+              required
+            ></textarea
+            ><br />
+            <button class="submit-button btn btn-success btn-lg" type="submit">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <img
+              src="./images/mg-logo.png"
+              class="bi"
+              height="50"
+              alt="Descriere imagine"
+            />
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2025 Matei's Portfolio</span
+          >
+        </div>
+      </footer>
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

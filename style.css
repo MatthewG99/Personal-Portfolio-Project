@@ -1,0 +1,586 @@
+/* General Body and HTML Settings */
+body {
+  padding-top: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(245, 245, 247, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: none;
+  padding-right: 50px;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0071e3;
+}
+
+.navbar-collapse {
+  background: rgba(245, 245, 247, 0.95);
+  text-align: right;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Box Styles */
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  margin-left: 2.5vw;
+  width: 95vw;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+/* Box Color Variations */
+.box-first {
+  background-color: #f0f0f5;
+  margin-top: 15px;
+}
+
+.box-third {
+  background-color: #f0f0f5;
+  height: 800px;
+}
+
+.box-first:hover,
+.box-third:hover {
+  background-color: #e0e0e5;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.box-second,
+.box-fourth {
+  background-color: #faf3e0;
+}
+
+.box-second:hover,
+.box-fourth:hover {
+  background-color: #fef9e6;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Text Styles */
+.main-text,
+.description-main-text {
+  color: #333;
+  font-size: 3.5rem;
+  font-family: 'Roboto', serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-variation-settings: 'wdth' 100;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Secondary Text Styles */
+.secondary-text {
+  color: #007bff;
+  font-size: 2rem;
+  font-family: 'Roboto', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Image Styles */
+.mac-img {
+  max-width: 890px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 23.8%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.hello-img {
+  position: absolute;
+  bottom: -1px;
+  left: 73%;
+  transform: translateX(-50%);
+  width: 650px;
+  height: auto;
+}
+
+/* Description Text Styles */
+.description-secondary-text {
+  margin-top: 20px;
+  color: #757575;
+  font-size: 2rem;
+  font-family: 'Roboto', serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-variation-settings: 'wdth' 100;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.additional-size {
+  margin-top: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Flexbox Container */
+.flex-container {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.img-container {
+  bottom: 0;
+  margin-left: 14%;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 30%;
+  max-width: 50%;
+  position: relative;
+}
+
+.img-container img {
+  width: 117px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.carousel-inner {
+  border-radius: 20px;
+  height: 695px;
+}
+
+.carousel-item img {
+  object-fit: contain;
+}
+
+/* Form Input Styles */
+label {
+  display: block;
+  font-size: 1.3rem;
+  font-family: 'Roboto', serif;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-left: 7.5%;
+}
+
+.input-text {
+  margin-bottom: 20px;
+  width: 85%;
+  margin-left: 7%;
+}
+
+.message-text {
+  width: 85%;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  border-radius: 40px;
+  font-size: 1.1rem;
+}
+
+textarea {
+  max-height: 75px;
+  min-height: 75px;
+  font-family: 'Roboto', serif;
+  font-size: 15px;
+}
+
+/* Media Queries */
+
+/* Small tablets & large phones (portrait) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .box {
+    margin-bottom: 0;
+  }
+  .box-first {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: 500px;
+    padding: 0;
+  }
+  .main-text {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
+  .secondary-text {
+    font-size: 2.2rem;
+    font-weight: 320;
+    margin-top: 20px;
+  }
+  .mac-img {
+    width: 450px;
+    bottom: 0px;
+    max-width: auto;
+    padding-right: 0px;
+    top: 46.3%;
+  }
+
+  .box-second {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: 640px;
+    margin-top: 40px;
+  }
+
+  .description-secondary-text {
+    font-size: 1.3rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .description-main-text {
+    font-size: 2.5rem;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .img-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    width: 100%;
+    margin-left: 19px;
+  }
+
+  .img-container img {
+    width: 55px;
+    margin-top: 30px;
+  }
+
+  .hello-img {
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 425px;
+    height: auto;
+  }
+
+  .box-fourth {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: 640px;
+    margin-top: 45px;
+  }
+
+  .box-third {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: auto;
+    margin-top: 45px;
+  }
+
+  .carousel-inner {
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .carousel-item img {
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: auto;
+  }
+
+  label {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1px;
+  }
+
+  form {
+    margin-top: 10px;
+  }
+
+  .input-text {
+    width: 100wh;
+  }
+
+  .message-text {
+    margin-bottom: 0;
+  }
+
+  .submit-button {
+    width: 50%;
+    border-radius: 40px;
+    margin-top: 20px;
+  }
+
+  .mg-logo {
+    height: 40px;
+  }
+}
+
+/* Tablets (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .box {
+    margin-bottom: 0;
+  }
+  .box-first {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: 500px;
+    padding: 0;
+  }
+  .main-text {
+    font-size: 3rem;
+    margin-top: 20px;
+  }
+  .secondary-text {
+    font-size: 2.2rem;
+    font-weight: 320;
+    margin: 0;
+  }
+  .mac-img {
+    width: 562px;
+    bottom: 0px;
+    max-width: auto;
+    padding-right: 0px;
+    top: 32.7%;
+  }
+
+  .box-second {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: 640px;
+    margin-top: 40px;
+  }
+
+  .description-secondary-text {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .description-main-text {
+    font-size: 2.5rem;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .img-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .img-container img {
+    width: 70px;
+    margin-top: 20px;
+  }
+
+  .hello-img {
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 525px;
+    height: auto;
+  }
+
+  .box-fourth {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: 670px;
+    margin-top: 45px;
+  }
+
+  .box-third {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: auto;
+    margin-top: 45px;
+  }
+
+  .carousel-inner {
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .carousel-item img {
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: auto;
+  }
+
+  label {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  form {
+    margin-top: 10px;
+  }
+
+  .input-text {
+    width: 100wh;
+  }
+
+  .message-text {
+    margin-bottom: 0;
+  }
+
+  .submit-button {
+    width: 50%;
+    border-radius: 40px;
+    margin-top: 20px;
+  }
+
+  .mg-logo {
+    height: 45px;
+  }
+}
+
+/* Large screens (laptops and desktops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .box {
+    margin-bottom: 0;
+  }
+  .box-first {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: 650px;
+    padding: 0;
+  }
+  .main-text {
+    font-size: 4rem;
+    margin-top: 20px;
+  }
+  .secondary-text {
+    font-size: 2.3rem;
+    font-weight: 320;
+  }
+  .mac-img {
+    width: 760px;
+    bottom: 0px;
+    max-width: auto;
+    padding-right: 0px;
+    top: 29.9%;
+  }
+
+  .box-second {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: 640px;
+    margin-top: 40px;
+  }
+
+  .description-secondary-text {
+    font-size: 1.8rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .img-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .img-container img {
+    width: 70px;
+    margin-top: 20px;
+  }
+
+  .hello-img {
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 525px;
+    height: auto;
+  }
+
+  .box-fourth {
+    box-sizing: border-box;
+    margin-left: 3vw;
+    width: 94vw;
+    height: 720px;
+    margin-top: 45px;
+  }
+}
